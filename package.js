@@ -8,7 +8,10 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom('0.9.0');
 
-  api.use('coffeescript');
+  api.use([
+    'check',
+    'coffeescript'
+  ]);
 
   api.addFiles('luhn.coffee');
 
