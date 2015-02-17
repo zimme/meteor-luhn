@@ -8,4 +8,4 @@ Luhn =
       while len--
         sum += if not bit ^= 1 then parseInt value[len], 10 else arr[value[len]]
 
-      sum % 10 == 0 and sum > 0
+      sum % 10 is 0 and sum > 0
