@@ -1,6 +1,9 @@
 Luhn =
   validate: do (arr = [0,2,4,6,8,1,3,5,7,9]) ->
     (value) ->
+      unless _.isString value
+        throw new TypeError 'Argument must be a string'
+
       bit = 1
       len = value.length
       sum = 0
