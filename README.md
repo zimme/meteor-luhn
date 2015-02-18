@@ -3,6 +3,8 @@
 (https://gitter.im/zimme/meteor-luhn)
 [![Code Climate](https://img.shields.io/codeclimate/github/zimme/meteor-luhn.svg)]
 (https://codeclimate.com/github/zimme/meteor-luhn)
+[![Travis](https://img.shields.io/travis/zimme/meteor-luhn.svg)]
+(https://travis-ci.org/zimme/meteor-luhn)
 
 ### Install
 ```sh
