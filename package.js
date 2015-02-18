@@ -10,7 +10,8 @@ Package.onUse(function (api) {
 
   api.use([
     'check',
-    'coffeescript'
+    'coffeescript',
+    'underscore'
   ]);
 
   api.addFiles('luhn.coffee');
