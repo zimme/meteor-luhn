@@ -2,7 +2,7 @@ Package.describe({
   git: 'https://github.com/zimme/meteor-luhn.git',
   name: 'zimme:luhn',
   summary: 'Luhn validation',
-  version: '0.1.3'
+  version: '0.1.4'
 });
 
 Package.onUse(function (api) {
