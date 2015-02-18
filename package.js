@@ -23,7 +23,6 @@ Package.onTest(function (api) {
   api.use([
     'coffeescript',
     'tinytest',
-    'underscore',
     'zimme:luhn'
   ]);
 
