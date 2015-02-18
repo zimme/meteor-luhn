@@ -18,3 +18,14 @@ Package.onUse(function (api) {
 
   api.export('Luhn');
 });
+
+Package.onTest(function (api) {
+  api.use([
+    'coffeescript',
+    'tinytest',
+    'underscore',
+    'zimme:luhn'
+  ]);
+
+  api.addFiles('tests.coffee');
+});
