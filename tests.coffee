@@ -2,7 +2,7 @@ Tinytest.add 'luhn - throw on invalid argument', (test) ->
   test.throws ->
     Luhn.validate 1234567890
 
-Tinytest.add 'luhn - validate valid credit card numbers', (test) ->
+Tinytest.add 'luhn - test valid credit card numbers', (test) ->
   # Check Visa
   test.isTrue Luhn.validate '4929165942273997'
 
@@ -15,7 +15,7 @@ Tinytest.add 'luhn - validate valid credit card numbers', (test) ->
   # Check American Express
   test.isTrue Luhn.validate '370798938095784'
 
-Tinytest.add 'luhn - validate invalid credit card numbers', (test) ->
+Tinytest.add 'luhn - test invalid credit card numbers', (test) ->
   # Check Visa
   test.isFalse Luhn.validate '4929165942273994'
 
