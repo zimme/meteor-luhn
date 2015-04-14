@@ -1,9 +1,15 @@
 language: node_js
 node_js:
   - "0.12"
+
 before_install:
-  - "curl -L https://raw.githubusercontent.com/arunoda/travis-ci-meteor-packages/master/configure.sh | /bin/sh"
+  - "npm install spacejam"
+  - "curl https://install.meteor.com | /bin/sh"
+
 notifications:
   webhooks:
     urls:
       - https://webhooks.gitter.im/e/b91db50965ba0157ff5a
+
+script:
+  - "node_modules/.bin/spacejam test-packages ./"
