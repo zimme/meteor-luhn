@@ -1,16 +1,11 @@
-sudo: required
 language: node_js
 node_js:
   - "0.12"
 
 before_install:
-  - "npm install spacejam"
   - "curl https://install.meteor.com | /bin/sh"
 
 notifications:
   webhooks:
     urls:
       - https://webhooks.gitter.im/e/b91db50965ba0157ff5a
-
-script:
-  - "node_modules/.bin/spacejam test-packages ./"

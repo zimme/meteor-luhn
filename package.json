@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "spacejam": "^1.1.4"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/spacejam test-packages ./"
+  }
+}
